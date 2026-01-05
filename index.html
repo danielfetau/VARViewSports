@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VARViewSports</title>
+  <meta name="description" content="Professional football analysis covering Premier League, La Liga, Serie A, Bundesliga, Ligue 1 and national teams.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <h1>VARViewSports</h1>
+  <p>Tactical Football Analysis & International Coverage</p>
+  <button id="darkModeToggle">🌙 Dark Mode</button>
+</header>
+
+<section id="football">
+  <h2>Football Leagues & National Teams</h2>
+  <div class="grid">
+
+    <div class="card premier">
+      <h3>Premier League</h3>
+      <ul>
+        <li>Manchester United</li>
+        <li>Liverpool</li>
+        <li>Chelsea</li>
+        <li>Manchester City</li>
+        <li>Arsenal</li>
+        <li>Tottenham Hotspur</li>
+      </ul>
+    </div>
+
+    <div class="card laliga">
+      <h3>La Liga</h3>
+      <ul>
+        <li>Barcelona</li>
+        <li>Real Madrid</li>
+        <li>Atlético Madrid</li>
+      </ul>
+    </div>
+
+    <div class="card seriea">
+      <h3>Serie A</h3>
+      <ul>
+        <li>Juventus</li>
+        <li>AC Milan</li>
+        <li>Inter Milan</li>
+        <li>Napoli</li>
+        <li>AS Roma</li>
+        <li>Lazio</li>
+      </ul>
+    </div>
+
+    <div class="card bundesliga">
+      <h3>Bundesliga</h3>
+      <ul>
+        <li>Bayern Munich</li>
+        <li>Borussia Dortmund</li>
+        <li>RB Leipzig</li>
+      </ul>
+    </div>
+
+    <div class="card ligue1">
+      <h3>Ligue 1</h3>
+      <ul>
+        <li>Paris Saint-Germain</li>
+        <li>Lyon</li>
+        <li>Monaco</li>
+      </ul>
+    </div>
+
+    <div class="card champions">
+      <h3>Champions League</h3>
+    </div>
+
+    <div class="card national">
+      <h3>National Teams</h3>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Tactical Corner</h2>
+  <div class="card tactical">
+    Tactical analysis and match breakdowns coming soon.
+  </div>
+</section>
+
+<section>
+  <h2>Transfers Insights</h2>
+  <div class="card transfers">
+    Transfer analysis and squad impact reports coming soon.
+  </div>
+</section>
+
+<section>
+  <h2>Other Sports Highlights</h2>
+  <div class="grid">
+    <div class="card f1">Formula 1</div>
+    <div class="card tennis">Tennis</div>
+  </div>
+</section>
+
+<section>
+  <h2>About VARViewSports</h2>
+  <div class="card about">
+    VARViewSports delivers clear, tactical football analysis across Europe’s top leagues and international competitions.
+  </div>
+</section>
+
+<script>
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? "☀️ Light Mode" : "🌙 Dark Mode";
+});
+</script>
+
+</body>
+</html>
