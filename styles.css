@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; background: #ffffff; color: #0D1F2D; }
+
+.site-header { text-align: center; padding: 50px 20px; background: #0D1F2D; color: white; }
+.site-header h1 { margin: 0; font-size: 2.5em; }
+.site-header p { margin-top: 10px; font-size: 1.1em; opacity: 0.9; }
+
+section { max-width: 1200px; margin: auto; padding: 50px 20px; }
+h2 { margin-bottom: 25px; border-bottom: 2px solid #0D1F2D; padding-bottom: 10px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.card { padding: 25px; border-radius: 6px; font-weight: bold; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+.card ul { margin-top: 15px; padding-left: 20px; font-weight: normal; }
+
+/* League colors */
+.premier { background:#1C2A47; color:white; }
+.laliga { background:#FF0000; color:white; }
+.seriea { background:#003399; color:white; }
+.bundesliga { background:#E30613; color:white; }
+.ligue1 { background:#0055A4; color:white; }
+.champions { background:#1A1A1A; color:white; }
+.national { background:#A50044; color:white; }
+
+/* Other categories */
+.tactical { background:#FFD700; color:black; }
+.transfers { background:#800080; color:white; }
+.f1 { background:#000000; color:white; }
+.tennis { background:#008000; color:white; }
+.about { background:#0D1F2D; color:white; }
+
+/* Dark Mode */
+body.dark-mode { background: #0D1F2D; color: #f4f4f4; }
+body.dark-mode .card { background: #1a2a3a; color: #f4f4f4; box-shadow: 0 4px 12px rgba(255,255,255,0.05); }
+body.dark-mode header.site-header { background: #000; }
+
+/* Mobile */
+@media (max-width: 768px) { .site-header h1 { font-size: 2em; } }
